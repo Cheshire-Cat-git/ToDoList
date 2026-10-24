@@ -12,7 +12,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.todolist"
-        minSdk = 37
+        minSdk = 27
         targetSdk = 37
         versionCode = 1
         versionName = "1.0"
@@ -64,6 +64,7 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.compose.runtime.livedata)
+    implementation(libs.androidx.datastore.preferences)
 
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
